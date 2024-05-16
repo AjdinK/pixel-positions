@@ -6,22 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pixel positions</title>
-    @vite(['resources/js/app.js'])
+    @vite('resources/css/app.css')
 </head>
-<body>
+<body class ="bg-black text-white">
 
-<div>
-    <nav>
+<div class="px-10">
+    <nav class = "flex justify-between items-center py-4 border-b border-white/10 ">
         <div>
-            <a href="">
+            <a href="/">
                 <img src="{{\Illuminate\Support\Facades\Vite::asset('/resources/images/logo.svg')}}" >
             </a>
         </div>
-        <div>links</div>
-        <div>post a job</div>
+
+        <div class="space-x-6 font-bold ">
+            <a href="#">Jobs</a>
+            <a href="#">Careers</a>
+            <a href="#">Salaries</a>
+            <a href="#">Companies</a>
+        </div>
+
+        <div>
+            <a href="">Post a Job</a>
+        </div>
 
     </nav>
-    <main>
+    <main class="mt-10 max-w-[986px]">
         {{$slot}}
     </main>
 </div>

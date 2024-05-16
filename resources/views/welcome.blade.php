@@ -1,30 +1,40 @@
 <x-layout>
+    <div class="space-y-10">
     <section>
+       <x-section-heading>Featuerd Jobs</x-section-heading>
 
-        <h3 class="mb-6"> Top Jobs</h3>
-
-        <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-
-                <div class="self-start text-xs">Laracast</div>
-
-            <div class="py-8 font-bold">
-                <h3>Video Producer</h3>
-                <p>Full time - From $60,000</p>
-            </div>
-
-            <div class="flex justify-between items-center mt-auto">
-                <div>
-
-                    <a href="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                    <a href="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                    <a href="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                    <a href="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-
-                </div>
-
-                <img src="http://placehold.it/42/42" class="rounded-xl" alt="">
-
-            </div>
+        <div class="grid lg:grid-cols-3 gap-8 mt-6">
+            <x-job-card></x-job-card>
+            <x-job-card></x-job-card>
+            <x-job-card></x-job-card>
         </div>
     </section>
+
+    <section>
+     <x-section-heading>Tags</x-section-heading>
+        <div class="mt-6 space-x-1">
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+            <x-tag>tag</x-tag>
+        </div>
+    </section>
+
+    <section>
+        <x-section-heading>Recent Jobs</x-section-heading>
+    </section>
+
+    </div>
 </x-layout>
+
+

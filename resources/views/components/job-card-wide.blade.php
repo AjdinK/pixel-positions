@@ -1,12 +1,14 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-
-    <img src="http://placehold.it/42/42" class="rounded-xl" alt="">
+<div class="p-4 bg-white/5 rounded-xl space-x-6 flex">
 
     <div>
+        <img src="http://picsum.photos/seed/{{rand(0,1000000)}}/100/100" class="rounded-xl" alt="">
+    </div>
 
-        <a href="#" class="self-start text-xs">Laracast</a>
-        <h3>Video Producer</h3>
-        <p>Full time - From $60,000</p>
+    <div class="flex-1">
+
+        <a href="#" class="self-start text-xs text-gray-500">Laracast</a>
+        <h3 class="font-bold text-lg">Video Producer</h3>
+        <p class="text-sm text-gray-500">Full time - From $60,000</p>
 
     </div>
 

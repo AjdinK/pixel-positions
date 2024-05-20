@@ -1,4 +1,5 @@
-<!doctype html>
+@php use Illuminate\Support\Facades\Vite; @endphp
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,18 +9,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@400;500;600&display=swap"
+          rel="stylesheet">
 
     @vite('resources/css/app.css')
     <title>Pixel positions</title>
 </head>
-<body class ="bg-black text-white font-hanken-grotesk">
+<body class="bg-black text-white font-hanken-grotesk">
 
 <div class="px-10">
-    <nav class = "flex justify-between items-center py-4 border-b border-white/10 ">
+    <nav class="flex justify-between items-center py-4 border-b border-white/10 ">
         <div>
             <a href="/">
-                <img src="{{\Illuminate\Support\Facades\Vite::asset('/resources/images/logo.svg')}}" >
+                <img src="{{Vite::asset('/resources/images/logo.svg')}}" alt='logo'>
             </a>
         </div>
 

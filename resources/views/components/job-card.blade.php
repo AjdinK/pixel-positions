@@ -7,11 +7,12 @@
     </div>
 
     <div class="flex justify-between items-center mt-auto">
+        
         <div>
-            <x-tag>API</x-tag>
-            <x-tag>PHP</x-tag>
-            <x-tag>LARAVEL</x-tag>
-            <x-tag>C#</x-tag>
+            <x-tag size='small'>API</x-tag>
+            <x-tag size='small'>PHP</x-tag>
+            <x-tag size='small'>LARAVEL</x-tag>
+            <x-tag size='small'>C#</x-tag>
         </div>
 
         <x-employer-logo :width="42"/>

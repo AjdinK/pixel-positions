@@ -2,7 +2,7 @@
     <div class="space-y-10">
 
         <section class="text-center pt-6">
-            <h1 class="font-bold text-5xl ">Lets Find Your Next Job</h1>
+            <h1 class="font-bold text-5xl ">Lets Find Your Next Job for ajdin</h1>
 
             <form action="">
                 <input type="text" placeholder="Web developer...." name="" id=""
@@ -48,5 +48,3 @@
 
     </div>
 </x-layout>
-
-

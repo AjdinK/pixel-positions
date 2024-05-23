@@ -7,7 +7,7 @@
     </div>
 
     <div class="flex justify-between items-center mt-auto">
-        
+
         <div>
             <x-tag size='small'>API</x-tag>
             <x-tag size='small'>PHP</x-tag>

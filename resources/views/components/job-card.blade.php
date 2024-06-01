@@ -15,7 +15,7 @@
             <x-tag size='small'>C#</x-tag>
         </div>
 
-        <x-employer-logo :width="42"/>
+        <x-employer-logo :width="42" />
 
     </div>
 

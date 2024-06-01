@@ -6,13 +6,14 @@
 
             <form action="">
                 <input type="text" placeholder="Web developer...." name="" id=""
-                       class=" mt-6 rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl  ">
+                    class=" mt-6 rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl  ">
             </form>
 
         </section>
 
 
         <section class="mt-10">
+            
             <x-section-heading>Featuerd Jobs</x-section-heading>
 
             <div class="grid lg:grid-cols-3 gap-8 mt-6">

@@ -1,3 +1,2 @@
 @props(['width' => 90])
-<img src="http://picsum.photos/seed/{{rand(0,1000000)}}/{{ $width }}" class="rounded-xl"
-     alt="">
+<img src="http://picsum.photos/seed/{{ rand(0, 1000000) }}/{{ $width }}" class="rounded-xl" alt="">

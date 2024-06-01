@@ -1,6 +1,6 @@
 <x-panel class="flex gap-x-6 ">
     <div>
-        <x-employer-logo/>
+        <x-employer-logo />
     </div>
 
     <div class="flex-1  flex flex-col">
@@ -13,11 +13,11 @@
 
 
     <div>
+
         <x-tag>API</x-tag>
         <x-tag>PHP</x-tag>
         <x-tag>LARAVEL</x-tag>
         <x-tag>C#</x-tag>
+
     </div>
 </x-panel>
-
-

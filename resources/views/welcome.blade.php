@@ -1,22 +1,22 @@
 <x-layout>
     <div class="space-y-10">
 
-        <section class="text-center pt-6">
-            <h1 class="font-bold text-5xl ">Lets Find Your Next Job for ajdin</h1>
+        <section class="pt-6 text-center">
+            <h1 class="text-5xl font-bold">Lets Find Your Next Job for</h1>
 
             <form action="">
-                <input type="text" placeholder="Web developer...." name="" id=""
-                    class=" mt-6 rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl  ">
+                <input class="mt-6 w-full max-w-xl rounded-xl border-white/10 bg-white/5 px-5 py-4" id=""
+                    name="" type="text" placeholder="Im looking for...">
             </form>
 
         </section>
 
 
         <section class="mt-10">
-            
+
             <x-section-heading>Featuerd Jobs</x-section-heading>
 
-            <div class="grid lg:grid-cols-3 gap-8 mt-6">
+            <div class="mt-6 grid gap-8 lg:grid-cols-3">
                 <x-job-card></x-job-card>
                 <x-job-card></x-job-card>
                 <x-job-card></x-job-card>

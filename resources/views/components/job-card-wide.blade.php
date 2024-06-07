@@ -1,13 +1,13 @@
-<x-panel class="flex gap-x-6 ">
+<x-panel class="flex gap-x-6">
     <div>
         <x-employer-logo />
     </div>
 
-    <div class="flex-1  flex flex-col">
+    <div class="flex flex-1 flex-col">
 
-        <a href="#" class="self-start text-xs text-gray-400">Laracast</a>
-        <h3 class="font-bold text-xl mt-3 group-hover:text-blue-900 transition-colors duration-300">Video Producer</h3>
-        <p class="text-sm text-gray-500 mt-auto">Full time - From $60,000</p>
+        <a class="self-start text-xs text-gray-400" href="#">Laracast</a>
+        <h3 class="mt-3 text-xl font-bold transition-colors duration-300 group-hover:text-blue-900">Video Producer</h3>
+        <p class="mt-auto text-sm text-gray-500">Full time - From $60,000</p>
 
     </div>
 

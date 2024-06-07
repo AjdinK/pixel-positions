@@ -27,14 +27,13 @@
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-6 space-x-1">
 
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-                <x-tag>tag</x-tag>
-
+                @unless ($tags->isEmpty())
+                    @foreach ($tags as $tag)
+                        <x-tag :$tag />
+                    @endforeach
+                @else
+                    <p>No tags found</p>
+                @endunless
             </div>
         </section>
 

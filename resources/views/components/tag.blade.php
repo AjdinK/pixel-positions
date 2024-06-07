@@ -13,6 +13,6 @@
 
 @endphp
 
-<a href="#" class="{{ $classes }}">
+<a class="{{ $classes }}" href="#">
     {{ $slot }}
 </a>

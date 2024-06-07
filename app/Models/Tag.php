@@ -5,20 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Job extends Model
+class Tag extends Model
 {
     use HasFactory;
-    public function employer()
-    {
-        return $this->belongsTo(Employer::class);
-    }
     /**
      * Define a many-to-many relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function tags()
+    public function jobs()
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Job::class);
     }
 }

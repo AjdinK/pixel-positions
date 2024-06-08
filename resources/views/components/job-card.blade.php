@@ -10,12 +10,12 @@
     <div class="mt-auto flex items-center justify-between">
 
         <div>
-            <x-tag size='small'>API</x-tag>
-            <x-tag size='small'>PHP</x-tag>
-            <x-tag size='small'>LARAVEL</x-tag>
+            <x-tag size='small' />
+            <x-tag size='small' />
+            <x-tag size='small' />
         </div>
 
-        <x-employer-logo :width="42"/>
+        <x-employer-logo :width="42" />
 
     </div>
 

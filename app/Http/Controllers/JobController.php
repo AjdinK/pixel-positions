@@ -19,7 +19,7 @@ class JobController extends Controller
             "jobs.index",
             [
                 'featuredJobs' => $jobs[0],
-                'jobs' => $jobs[1],
+                'jobs' => Job::all(),
                 'tags' => Tag::all(),
             ]
         );

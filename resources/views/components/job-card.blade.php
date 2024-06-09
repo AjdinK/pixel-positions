@@ -12,12 +12,12 @@
 
         <div>
             @foreach ($job->tags as $tag)
-                <x-tag :$tag size=small />
+                <x-tag :$tag size=small/>
             @endforeach
 
         </div>
 
-        <x-employer-logo :width="42" />
+        <x-employer-logo :width="42"/>
 
     </div>
 

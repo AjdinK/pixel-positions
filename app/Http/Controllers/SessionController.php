@@ -19,7 +19,7 @@ class SessionController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.login');
     }
 
     /**
@@ -27,7 +27,20 @@ class SessionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $formFields = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if (auth()->attempt($formFields)) {
+            $request->session()->regenerate();
+
+            return redirect('/')->with('message', 'you are now logged in !!!');
+        }
+
+        return back()
+            ->withErrors(['email' => 'Invalid Credentials'])
+            ->onlyInput('email');
     }
 
     /**

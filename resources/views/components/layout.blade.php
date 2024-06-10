@@ -46,7 +46,9 @@
                 <x-links-menu href="/jobs/create">
                     Post a Job
                 </x-links-menu>
+                
                 <x-links-menu href="/logout">Log Out</x-links-menu>
+
             </x-links-menu-wrapper>
 
         @endauth

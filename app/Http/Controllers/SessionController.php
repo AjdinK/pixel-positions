@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class SessionController extends Controller
 {
@@ -32,15 +33,15 @@ class SessionController extends Controller
             'password' => ['required'],
         ]);
 
-        if (auth()->attempt($formFields)) {
-            $request->session()->regenerate();
-
-            return redirect('/')->with('message', 'you are now logged in !!!');
+        if (! auth()->attempt($formFields)) {
+            throw ValidationException::withMessages([
+                'error' => 'Sorry those credentials dont match.',
+            ]);
         }
 
-        return back()
-            ->withErrors(['email' => 'Invalid Credentials'])
-            ->onlyInput('email');
+        $request->session()->regenerate();
+
+        return redirect('/');
     }
 
     /**

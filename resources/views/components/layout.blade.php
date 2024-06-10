@@ -27,16 +27,32 @@
             </a>
         </div>
 
-        <div class="space-x-6 font-bold">
-            <a href="#">Jobs</a>
-            <a href="#">Careers</a>
-            <a href="#">Salaries</a>
-            <a href="#">Companies</a>
-        </div>
+        <x-links-menu-wrapper>
+            <x-links-menu href="#">Jobs</x-links-menu>
+            <x-links-menu href="#">Careers</x-links-menu>
+            <x-links-menu href="#">Salaries</x-links-menu>
+            <x-links-menu href="#">Companies</x-links-menu>
+        </x-links-menu-wrapper>
 
-        <div>
-            <a href="">Post a Job</a>
-        </div>
+
+        @auth
+
+            <x-links-menu-wrapper class="font-black space-x-6">
+                <x-links-menu href="/jobs/create">Post a Job</x-links-menu>
+                <x-links-menu href="/logout">Log Out</x-links-menu>
+            </x-links-menu-wrapper>
+
+        @endauth
+
+        @guest
+
+            <x-links-menu-wrapper class="font-black space-x-6">
+                <x-links-menu href="/register">Sign Up</x-links-menu>
+                <x-links-menu href="/login">Log In</x-links-menu>
+            </x-links-menu-wrapper>
+
+        @endguest
+
 
     </nav>
 

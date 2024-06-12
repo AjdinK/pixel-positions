@@ -17,7 +17,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/jobs/{job}', [JobController::class, 'destroy']);
 });
 
-Route::get('/jobs/{job}', [JobController::class, 'show']);
+//Route::get('/jobs/{job}', [JobController::class, 'show']);
+
 Route::get('/search', SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);
 

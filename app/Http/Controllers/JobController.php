@@ -13,7 +13,7 @@ class JobController extends Controller
 {
     public function index()
     {
-        $jobs = Job::all()->groupBy('featured');
+        $jobs = Job::latest()->get()->groupBy('featured');
 
         return view(
             'jobs.index',
@@ -55,4 +55,12 @@ class JobController extends Controller
         return view('jobs.create');
 
     }
+
+    //    public function show(Job $job)
+    //    {
+    //        return view('jobs.show',
+    //            [
+    //                'job' => $job,
+    //            ]);
+    //    }
 }

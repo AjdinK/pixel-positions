@@ -11,16 +11,19 @@ class Job extends Model
 {
     use HasFactory;
 
-    public function employer(): BelongsTo
+    public function tag(string $name): void
     {
-        return $this->belongsTo(Employer::class);
+        $tag = Tag::firstOrCreate(['name' => $name]);
+        $this->tags()->attach($tag);
     }
 
-    /**
-     * Define a many-to-many relationship.
-     */
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function employer(): BelongsTo
+    {
+        return $this->belongsTo(Employer::class);
     }
 }

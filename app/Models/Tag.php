@@ -10,9 +10,6 @@ class Tag extends Model
 {
     use HasFactory;
 
-    /**
-     * Define a many-to-many relationship.
-     */
     public function jobs(): BelongsToMany
     {
         return $this->belongsToMany(Job::class);

@@ -12,12 +12,7 @@ Route::get('/', [JobController::class, 'index']);
 Route::middleware('auth')->group(function () {
     Route::get('/jobs/create', [JobController::class, 'create']);
     Route::post('/jobs', [JobController::class, 'store']);
-    Route::post('/jobs/{job}/edit', [JobController::class, 'edit']);
-    Route::post('/jobs/{job}', [JobController::class, 'update']);
-    Route::post('/jobs/{job}', [JobController::class, 'destroy']);
 });
-
-//Route::get('/jobs/{job}', [JobController::class, 'show']);
 
 Route::get('/search', SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);

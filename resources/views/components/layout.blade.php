@@ -41,13 +41,17 @@
 
         @auth
 
-            <x-links-menu-wrapper>
+            <x-links-menu-wrapper class="flex">
 
                 <x-links-menu href="/jobs/create">
                     Post a Job
                 </x-links-menu>
-                
-                <x-links-menu href="/logout">Log Out</x-links-menu>
+
+                <form method="POST" action="/logout">
+                    @csrf
+                    @method('DELETE')
+                    <button class="hover:text-gray-400 transition-colors duration-300">Log Out</button>
+                </form>
 
             </x-links-menu-wrapper>
 

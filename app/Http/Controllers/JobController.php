@@ -45,7 +45,6 @@ class JobController extends Controller
             foreach (explode(',', $attributes['tags']) as $tag) {
                 $job->tag($tag);
             }
-
         }
 
         return redirect('/');
@@ -54,7 +53,5 @@ class JobController extends Controller
     public function create()
     {
         return view('jobs.create');
-
     }
-    
 }

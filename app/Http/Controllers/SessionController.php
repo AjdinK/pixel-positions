@@ -20,7 +20,7 @@ class SessionController extends Controller
             'password' => ['required'],
         ]);
 
-        if (! auth()->attempt($formFields)) {
+        if (!auth()->attempt($formFields)) {
             throw ValidationException::withMessages([
                 'error' => 'Sorry those credentials dont match.',
             ]);

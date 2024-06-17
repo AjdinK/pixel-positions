@@ -14,6 +14,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/jobs', [JobController::class, 'store']);
 });
 
+
 Route::get('/search', SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);
 

@@ -66,9 +66,6 @@
 
             @endguest
 
-
-
-
         </nav>
 
         <main class="mx-auto mt-10 max-w-[986px]">
